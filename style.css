@@ -55,7 +55,7 @@ nav a:hover {
 
 
 .main-content {
-    flex-basis: 80%;
+    flex-basis: 75%;
     background-color: #fff;
     padding: 20px;
     color: #000000;
@@ -68,3 +68,27 @@ footer {
     padding: 10px;
     clear: both;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Services paragraph */
+.service {
+    margin-left: 50px;
+    display: inline-block;
+    padding: 7px 12px;
+    background-color: #fff;
+}
+
+.about-image {
+    background-color: #000000;
+
+        
+}
+
+
+
