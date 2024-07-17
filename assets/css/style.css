@@ -1,0 +1,411 @@
+/* Reset and basic styling */
+body,
+html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
+}
+
+/* Header styling */
+header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #373a40;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+
+nav a:hover {
+  color: #dc5f00;
+}
+
+/* Container and layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.sidebar {
+  flex-basis: 15%;
+  background-color: #373a40;
+  padding: 20px;
+  color: #fff;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sidebar-link:hover {
+  color: #dc5f00;
+}
+
+.main-content {
+  flex-basis: 75%;
+  background-color: #fff;
+  padding: 50px;
+  color: #000;
+  text-align: justify;
+}
+
+/* Main images */
+.main-column {
+  float: left;
+  width: 33%; /* Adjust the width to control the column size */
+  padding: 5px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  text-align: center; /* Center align images */
+}
+
+.main-column img {
+  width: 100%; /* Make images fill their container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra space below the image */
+  max-width: 100%; /* Ensure images don't exceed their original size */
+  border-radius: 8px; /* Add rounded corners for images */
+}
+
+/* Offer description */
+.content ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+}
+
+.content p,
+li {
+  margin-left: 1em;
+  margin-right: 3em;
+}
+
+/* Clearfix (clear floats) */
+.main-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Project paragraphs */
+.image-description p {
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: justify;
+}
+
+/* Footer styling */
+footer {
+  background-color: #373a40;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  clear: both;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .sidebar {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    flex-basis: 100%;
+    padding: 10px; /* Adjusted padding for smaller screens */
+  }
+}
+
+/* Additional styles for sample projects */
+.image-description {
+  margin-bottom: 20px;
+}
+
+.image-description img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* Center images and add spacing */
+}
+
+.image-description h3 {
+  text-align: center;
+}
+
+.image-description p {
+  text-align: justify;
+}
+
+/* Additional styles for About Us */
+.about-us-content {
+  text-align: center; /* Center-align content */
+  padding: 20px; /* Padding around logo */
+  max-width: 100%;
+}
+
+.about-us-content img {
+  display: block;
+  margin: 0 auto 10px; /* Center image */
+  background-color: #000; /* Black background for logo */
+  max-width: 100%; /* Ensures image doesn't overflow container */
+}
+
+.about-us-content p {
+  text-align: center;
+  margin: auto;
+  width: 600px;
+  padding: 20px;
+  max-width: 100%; /* Adjusts width based on container */
+}
+
+.about-me p {
+  text-align: justify;
+  margin: auto;
+  padding: 10px;
+  max-width: 100%; /* Adjusts width based on container */
+}
+
+.about-me h4 {
+  text-align: center;
+}
+
+/* Two-column layout for Our Mission and Vision page */
+.two-column-layout {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px; /* Add margin for spacing */
+}
+
+.left-column h3,
+.right-column h3 {
+  text-align: left;
+  color: #000000;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.left-column p,
+.right-column p {
+  text-align: justify;
+  color: #000000;
+}
+
+/* Responsive adjustments for two-column layout */
+@media (max-width: 768px) {
+  .two-column-layout {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .left-column,
+  .right-column {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    padding: 10px; /* Adjusted padding for smaller screens */
+  }
+}
+
+/* Styles for the registration form */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --clr: #0652e9;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #eeeeee;
+}
+
+form {
+  background: #373a40;
+  padding: 60px 80px 60px;
+  text-align: center;
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+form h2 {
+  color: #dc5f00;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+  margin-bottom: 50px;
+}
+
+.inputBox {
+  position: relative;
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #dfdfdf;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.inputBox label {
+  position: absolute;
+  left: 0;
+  padding: 10px 0;
+  pointer-events: none;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.inputBox label span {
+  display: inline-flex;
+  letter-spacing: 0.05em;
+  transition: 0.2s ease-in-out;
+}
+
+.inputBox input:focus ~ label span,
+.inputBox input:valid ~ label span {
+  color: var(--clr);
+  letter-spacing: 0.15em;
+  transform: translateY(-25px);
+}
+
+.inputBox input:focus,
+.inputBox input:valid {
+  border-bottom: 2px solid var(--clr);
+}
+
+.inputBox input[type="submit"] {
+  background: var(--clr);
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  color: #000000;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.inputBox input[type="submit"]:hover {
+  letter-spacing: 0.35em;
+}
+
+form p {
+  color: #fff;
+}
+
+form p a {
+  color: var(--clr);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* For Phone number */
+.no-arrow::-webkit-inner-spin-button {
+  display: none;
+}
+.no-arrow::-webkit-outer-spin-button,
+.no-arrow::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Concern/Textarea */
+.inputBox textarea {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #dfdfdf;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  resize: none; /* Disable manual resizing */
+  height: 150px; /* Adjust height as needed */
+}
+
+.inputBox textarea:focus ~ label span,
+.inputBox textarea:valid ~ label span {
+  color: var(--clr);
+  letter-spacing: 0.15em;
+  transform: translateY(-25px);
+}
+
+.inputBox textarea:focus,
+.inputBox textarea:valid {
+  border-bottom: 2px solid var(--clr);
+}
+
+.inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  pointer-events: none;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.inputBox label span {
+  display: inline-flex;
+  letter-spacing: 0.05em;
+  transition: 0.2s ease-in-out;
+}
