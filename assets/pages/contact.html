@@ -75,16 +75,6 @@
       /></a>
       <p>&copy; Grant Paul Pamor | 202212022@fit.edu.ph</p>
     </footer>
-    <script>
-      let label = document.querySelectorAll("label").forEach((label) => {
-        label.innerHTML = label.innerText
-          .split("")
-          .map(
-            (letters, i) =>
-              `<span style="transition-delay: ${i * 50}ms"> ${letters}</span>`
-          )
-          .join("");
-      });
-    </script>
+    <script src="../js/form.js"></script>
   </body>
 </html>
